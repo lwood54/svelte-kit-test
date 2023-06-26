@@ -1,0 +1,104 @@
+@import '@fontsource/fira-mono';
+
+:root {
+	--font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	--font-mono: 'Fira Mono', monospace;
+	--color-bg-0: rgb(37, 42, 46);
+	--color-bg-1: rgb(54, 61, 67);
+	--color-bg-2: rgb(131, 148, 162);
+	--color-theme-1: #26cac0;
+	--color-theme-1-darker: #10605a;
+	--color-theme-2: #3696f6;
+	--color-theme-2-darker: #037ffb;
+	--color-bg-home: #37716eb0;
+	--color-bg-home-max: #25bbb1;
+	--color-bg-builder: #294d74;
+	--color-bg-builder-max: #3372b564;
+	--color-bg-super: #732222;
+	--color-bg-super-max: #bf3030;
+	--color-text: rgb(245, 250, 249);
+	--color-text-dark: rgb(32, 33, 33);
+	--column-width: 42rem;
+	--column-margin-top: 4rem;
+	--spacing-s: 4px;
+	--spacing-m: 8px;
+	--spacing-l: 16px;
+	--spacing-xl: 32px;
+	font-family: var(--font-body);
+	color: var(--color-text);
+	box-sizing: border-box;
+
+	/* DatePickerSvelte */
+	--date-picker-foreground: #f7f7f7;
+	--date-picker-background: #4b5563;
+	--date-picker-highlight-border: hsl(var(--deg), 98%, 49%);
+	--date-picker-highlight-shadow: hsla(var(--deg), 98%, 49%, 50%);
+	--date-picker-selected-color: hsl(var(--deg), 100%, 85%);
+	--date-picker-selected-background: hsla(var(--deg), 98%, 49%, 20%);
+	/* --date-input-width: 17px; */
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	background-color: var(--color-bg-1);
+	background-size: 100vw 100vh;
+}
+
+p {
+	font-size: 0.85rem;
+	margin: 0;
+}
+a {
+	color: var(--color-theme-2);
+	text-decoration: none;
+	font-size: 0.85rem;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1rem;
+}
+
+h3 {
+	font-size: 0.9rem;
+	font-weight: semi-bold;
+}
+
+/* GLOBAL CLASSES */
+.inline {
+	display: flex;
+	flex-direction: row;
+}
+
+.stack {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.field-label {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.text {
+	color: var(--color-theme-1);
+	margin: 0;
+}
+
+button:focus:not(:focus-visible) {
+	outline: none;
+}
+
+@media (min-width: 720px) {
+	/* h1 {
+		font-size: 2.4rem;
+	} */
+}
